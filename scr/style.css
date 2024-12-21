@@ -6,17 +6,9 @@
 }
 
 body {
-  margin: 0;
   font-family: 'Sora', sans-serif;
   background-color: #E8E8E8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column; /* Empilha as seções verticalmente */
-  align-items: stretch; /* Garante que ocupem toda a largura */
-  min-height: 100vh;
-  height: auto;
+  overflow-x: hidden; /* Evita scroll lateral */
 }
 
 .navbar {
@@ -133,8 +125,6 @@ body {
   width: auto; /* Mantém proporção */
 }
 
-
-
 .logo a {
   text-decoration: none;
   cursor: pointer;
@@ -152,16 +142,32 @@ body {
 }
 /* Contêiner Principal */
 .main-container {
-  width: 100%; /* Garante que o contêiner ocupe toda a largura */
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  height: 100vh; /* Altura total da tela */
-  text-align: center; /* Centraliza o texto */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 20px;
-  background-color: #E8E8E8; /* Fundo claro */
-  margin: 0; /* Remove margens padrão */
+}
+
+.wave-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-container svg {
+  display: block;
+  width: 100%; /* Largura total */
+  height: auto; /* Mantém a proporção original */
+  transform: translateY(-67px);
 }
 
 /* Botão New Version */
@@ -841,7 +847,10 @@ section .relationship-title {
 .pag-site {
   width: 100%;
   padding: 50px 20px;
-  background-color: #f7f9fc;
+  background-color: #152446;
+  position: relative;
+  margin-top: 190px;
+  border-top: solid 1px #000000;
   display: flex;
   flex-direction: column;
   align-items: center;
