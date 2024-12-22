@@ -36,35 +36,77 @@
     <button class="get-started-button">Comece de GRAÇA agora!</button>
     <div class="wave-container">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#152446" fill-opacity="0.9"
-          d="M0,64L26.7,80C53.3,96,107,128,160,117.3C213.3,107,267,53,320,48C373.3,43,427,85,480,122.7C533.3,160,587,192,640,197.3C693.3,203,747,181,800,186.7C853.3,192,907,224,960,250.7C1013.3,277,1067,299,1120,256C1173.3,213,1227,107,1280,69.3C1333.3,32,1387,64,1413,80L1440,96L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+        <path fill="#152446" fill-opacity="1"
+          d="M0,128L40,122.7C80,117,160,107,240,106.7C320,107,400,117,480,101.3C560,85,640,43,720,37.3C800,32,880,64,960,74.7C1040,85,1120,75,1200,80C1280,85,1360,107,1400,117.3L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
         </path>
       </svg>
     </div>
   </div>
-  <section class="pag-site">
-    <div class="chat-wrapper">
+  
+<section class="pag-site">
+  <div class="layout-container">
+    <!-- Texto e Cards -->
+    <div class="info-section">
       <div class="text-section">
-        <h1>Entender como a IA <span class="highlight">pode influenciar</span> o seu negócio</h1>
+        <h1>Transforme seu <span class="highlight">negócio</span> com IA</h1>
         <p>
-          A Astex revoluciona o atendimento com IA, garantindo respostas rápidas e personalizadas 24/7.
-          Nossa solução otimiza recursos, melhora a experiência do cliente e impulsiona negócios.
-          Veja ao lado como funciona na prática!
+          Descubra como a inteligência artificial pode revolucionar sua empresa!
+          Automatize processos, personalize o atendimento e escale seu negócio de
+          forma eficiente. Veja o exemplo ao lado e conheça as vantagens para seu setor.
         </p>
+        <button class="cta-button">Entre em contato</button>
       </div>
-      <div class="chat-container" id="chat-box">
-        <!-- O conteúdo do chat será inserido aqui pelo JavaScript -->
+
+      <!-- Cards -->
+      <div class="cards-info">
+        <div class="card">
+          <h4>Automação 24/7</h4>
+          <p>
+            Respostas rápidas e personalizadas a qualquer hora. Garanta
+            disponibilidade total e otimize seu suporte ao cliente.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Escalável</h4>
+          <p>
+            Expanda seu negócio de forma eficiente com soluções flexíveis de IA,
+            adaptáveis para empresas de todos os tamanhos e segmentos.
+          </p>
+        </div>
+        <div class="card">
+          <h4>Personalização</h4>
+          <p>
+            Adapte os atendimentos às necessidades específicas do seu nicho.
+            Configure fluxos personalizados para melhorar a experiência do cliente.
+          </p>
+        </div>
+        <div class="card"> <!-- Novo Card Adicionado -->
+          <h4>Segurança</h4>
+          <p>
+            Tenha total controle sobre os dados dos seus clientes. Nossa solução de IA
+            é desenvolvida com protocolos de segurança para garantir proteção total.
+          </p>
+        </div>
       </div>
     </div>
-    <div id="button-container">
-      <!-- Botões de alternância de nicho serão gerados dinamicamente pelo JS -->
-    </div>
-  </section>
-  
-  
-    </section>
-    </div>
-  </section>
+
+    <!-- Chat Template -->
+    <div class="chat-container" id="chat-box"></div>
+  </div>
+
+  <!-- Botões de Nichos -->
+  <div id="button-container"></div>
+</section>
+
+<!-- SVG Wave -->
+<div class="wave-footer">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#152446" fill-opacity="1"
+      d="M0,224L24,234.7C48,245,96,267,144,234.7C192,203,240,117,288,106.7C336,96,384,160,432,202.7C480,245,528,267,576,245.3C624,224,672,160,720,138.7C768,117,816,139,864,170.7C912,203,960,245,1008,261.3C1056,277,1104,267,1152,218.7C1200,171,1248,85,1296,74.7C1344,64,1392,128,1416,160L1440,192L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z">
+    </path>
+  </svg>
+</div>
+
   <section class="section">
     <div class="trusted-companies">
       <p class="relationship-title">Powered by</p>
@@ -310,28 +352,30 @@
 </body>
 <footer class="footer">
   <div class="footer-container">
-      <div class="footer-logo">
-        <img src="imagens/logoazul.png" alt="Logo da Empresa" class="logo" style="width: 50px; height: auto;">
-      </div>
-      <div class="footer-links">
-          <ul>
-              <li><a href="#">Termos de Serviço</a></li>
-              <li><a href="#">Política de Uso</a></li>
-              <li><a href="#">Política de Privacidade</a></li>
-          </ul>
-      </div>
-      <div class="footer-social">
-          <a href="https://www.instagram.com/seuperfil" target="_blank">
-              <img src="imagens/insta.png" alt="Instagram" class="social-icon">
-          </a>
-          <a href="https://www.linkedin.com/seuperfil" target="_blank">
-              <img src="imagens/linkedin.png" alt="LinkedIn" class="social-icon">
-          </a>
-      </div>
+    <!-- Logo e Nome igual ao Nav -->
+    <div class="footer-logo">
+      <img src="imagens/logoazul.png" alt="Astex Logo" />
+      <span>ASTEX</span>
+    </div>
+
+    <!-- Links e Direitos -->
+    <div class="footer-links">
+      <a href="#">Termos de Serviço</a>
+      <a href="#">Política de Uso</a>
+      <a href="#">Política de Privacidade</a>
+    </div>
+
+    <!-- Redes Sociais Inline -->
+    <div class="footer-social">
+      <a href="https://instagram.com" target="_blank">
+        <img src="imagens/insta.png" alt="Instagram" />
+      </a>
+      <a href="https://linkedin.com" target="_blank">
+        <img src="imagens/linkedin.png'" alt="LinkedIn" />
+      </a>
+    </div>
   </div>
-  <div class="footer-bottom">
-      <p>&copy; 2024 Astex Technologies - Todos os direitos reservados.</p>
-  </div>
+  <p>© 2024 Astex Technologies - Todos os direitos reservados.</p>
 </footer>
 
 </html>
