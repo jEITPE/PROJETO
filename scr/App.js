@@ -229,5 +229,3 @@ navToggle.addEventListener('click', () => {
 });
 
 
-
-
