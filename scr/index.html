@@ -14,15 +14,14 @@
       <a class="home" id="p-link" href="#"><p>ASTEX</p></a>
     </div>
     <ul class="nav-links">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Planos</a></li>
-      <li><a href="#">Templates</a></li>
-      <li><a href="#">Como usar?</a></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#planos">Planos</a></li>
+      <li><a href="#faq">Como usar?</a></li>
     </ul>
     <button class="cta-button">Crie seu agente agora</button>
   </nav>
 
-  <div class="main-container">
+  <div id="home" class="main-container">
     <div class="text-container">
       <h1 class="main-heading">
         Atenda seus clientes<br>
@@ -35,93 +34,42 @@
     </div>
     <button class="get-started-button">Comece de GRAÇA agora!</button>
     <div class="wave-container">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#152446" fill-opacity="1"
-          d="M0,128L40,122.7C80,117,160,107,240,106.7C320,107,400,117,480,101.3C560,85,640,43,720,37.3C800,32,880,64,960,74.7C1040,85,1120,75,1200,80C1280,85,1360,107,1400,117.3L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
-        </path>
-      </svg>
+      <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 200" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(7, 20, 167, 1)" offset="0%"></stop><stop stop-color="rgba(47, 99, 251, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,60L40,50C80,40,160,20,240,20C320,20,400,40,480,53.3C560,67,640,73,720,86.7C800,100,880,120,960,106.7C1040,93,1120,47,1200,46.7C1280,47,1360,93,1440,103.3C1520,113,1600,87,1680,73.3C1760,60,1840,60,1920,53.3C2000,47,2080,33,2160,30C2240,27,2320,33,2400,30C2480,27,2560,13,2640,16.7C2720,20,2800,40,2880,53.3C2960,67,3040,73,3120,93.3C3200,113,3280,147,3360,136.7C3440,127,3520,73,3600,43.3C3680,13,3760,7,3840,33.3C3920,60,4000,120,4080,140C4160,160,4240,140,4320,133.3C4400,127,4480,133,4560,113.3C4640,93,4720,47,4800,50C4880,53,4960,107,5040,113.3C5120,120,5200,80,5280,53.3C5360,27,5440,13,5520,16.7C5600,20,5680,40,5720,50L5760,60L5760,200L5720,200C5680,200,5600,200,5520,200C5440,200,5360,200,5280,200C5200,200,5120,200,5040,200C4960,200,4880,200,4800,200C4720,200,4640,200,4560,200C4480,200,4400,200,4320,200C4240,200,4160,200,4080,200C4000,200,3920,200,3840,200C3760,200,3680,200,3600,200C3520,200,3440,200,3360,200C3280,200,3200,200,3120,200C3040,200,2960,200,2880,200C2800,200,2720,200,2640,200C2560,200,2480,200,2400,200C2320,200,2240,200,2160,200C2080,200,2000,200,1920,200C1840,200,1760,200,1680,200C1600,200,1520,200,1440,200C1360,200,1280,200,1200,200C1120,200,1040,200,960,200C880,200,800,200,720,200C640,200,560,200,480,200C400,200,320,200,240,200C160,200,80,200,40,200L0,200Z"></path></svg>
     </div>
   </div>
   
-<section class="pag-site">
-  <div class="layout-container">
-    <!-- Texto e Cards -->
-    <div class="info-section">
-      <div class="text-section">
-        <h1>Transforme seu <span class="highlight">negócio</span> com IA</h1>
-        <p>
-          Descubra como a inteligência artificial pode revolucionar sua empresa!
-          Automatize processos, personalize o atendimento e escale seu negócio de
-          forma eficiente. Veja o exemplo ao lado e conheça as vantagens para seu setor.
-        </p>
-        <button class="cta-button">Entre em contato</button>
+  <section class="pag-site">
+    <div class="layout-container">
+      <!-- Texto e Imagem -->
+      <div class="info-section" style="margin-bottom: auto;">
+        <div class="text-section">
+          <h1>Transforme o seu atendimento<span class="highlight"> no Whatsapp</span> </h1>
+          <p>
+            Descubra como a inteligência artificial pode revolucionar sua empresa!
+            Automatize processos, personalize o atendimento e escale seu negócio de
+            forma eficiente. Clique nos botões abaixo e veja exemplos do nosso impacto!
+          </p>
+          <div class="button-container">
+          <button class="button-container" data-image="automacao.jpg">Delivery</button>
+          <button class="button-container" data-image="personalizacao.jpg">Imobiliárias</button>
+          <button class="button-container" data-image="seguranca.jpg">Hospedagem e Turismo</button>
+          <button class="button-container" data-image="seguranca.jpg">Comércio e Varejo</button>
+          <button class="button-container" data-image="seguranca.jpg">Saúde e Bem-estar</button>
+          <button class="button-container" data-image="seguranca.jpg">Finanças e Seguros</button>
+        </div>
+        </div>
       </div>
-
-      <!-- Cards -->
-      <div class="cards-info">
-        <div class="card">
-          <h4>Automação 24/7</h4>
-          <p>
-            Respostas rápidas e personalizadas a qualquer hora. Garanta
-            disponibilidade total e otimize seu suporte ao cliente.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Escalável</h4>
-          <p>
-            Expanda seu negócio de forma eficiente com soluções flexíveis de IA,
-            adaptáveis para empresas de todos os tamanhos e segmentos.
-          </p>
-        </div>
-        <div class="card">
-          <h4>Personalização</h4>
-          <p>
-            Adapte os atendimentos às necessidades específicas do seu nicho.
-            Configure fluxos personalizados para melhorar a experiência do cliente.
-          </p>
-        </div>
-        <div class="card"> <!-- Novo Card Adicionado -->
-          <h4>Segurança</h4>
-          <p>
-            Tenha total controle sobre os dados dos seus clientes. Nossa solução de IA
-            é desenvolvida com protocolos de segurança para garantir proteção total.
-          </p>
-        </div>
+  
+      <!-- Imagem que será alterada -->
+      <div class="image-container">
+        <img id="dynamic-image" src="imagens/imagem whats.png" alt="Exemplo de uso da IA" style="width: 400px;height: auto;" />
       </div>
     </div>
 
-    <!-- Chat Template -->
-    <div class="chat-container" id="chat-box"></div>
-  </div>
-
-  <!-- Botões de Nichos -->
-  <div id="button-container"></div>
-</section>
-
-<!-- SVG Wave -->
-<div class="wave-footer">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#152446" fill-opacity="1"
-      d="M0,224L24,234.7C48,245,96,267,144,234.7C192,203,240,117,288,106.7C336,96,384,160,432,202.7C480,245,528,267,576,245.3C624,224,672,160,720,138.7C768,117,816,139,864,170.7C912,203,960,245,1008,261.3C1056,277,1104,267,1152,218.7C1200,171,1248,85,1296,74.7C1344,64,1392,128,1416,160L1440,192L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z">
-    </path>
-  </svg>
-</div>
-
-  <section class="section">
-    <div class="trusted-companies">
-      <p class="relationship-title">Powered by</p>
-      <div class="companies">
-        <div class="company">
-          <img src="imagens/meta.png" alt="Meta">
-          <p class="company-name">META</p>
-        </div>
-        <div class="company">
-          <img src="imagens/chatgpt.png" alt="OpenAI">
-          <p class="company-name">OpenAI</p>
-        </div>
-      </div>
-    </div>
   </section>
+
+  <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(7, 20, 167, 1)" offset="0%"></stop><stop stop-color="rgba(24, 69, 213, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,80L34.3,73.3C68.6,67,137,53,206,41.7C274.3,30,343,20,411,13.3C480,7,549,3,617,16.7C685.7,30,754,60,823,70C891.4,80,960,70,1029,60C1097.1,50,1166,40,1234,33.3C1302.9,27,1371,23,1440,30C1508.6,37,1577,53,1646,51.7C1714.3,50,1783,30,1851,25C1920,20,1989,30,2057,40C2125.7,50,2194,60,2263,65C2331.4,70,2400,70,2469,68.3C2537.1,67,2606,63,2674,56.7C2742.9,50,2811,40,2880,35C2948.6,30,3017,30,3086,25C3154.3,20,3223,10,3291,6.7C3360,3,3429,7,3497,18.3C3565.7,30,3634,50,3703,60C3771.4,70,3840,70,3909,60C3977.1,50,4046,30,4114,28.3C4182.9,27,4251,43,4320,51.7C4388.6,60,4457,60,4526,53.3C4594.3,47,4663,33,4731,33.3C4800,33,4869,47,4903,53.3L4937.1,60L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z"></path></svg>
+
   
 
     <div class="main-content">
@@ -195,21 +143,25 @@
     <img src="imagens/Website Bloco de Texto com Mock-up de Celular Alinhado à Direita Branco Preto (2).png" alt="Descrição da imagem" class="img-fluid mt-4">
 
   </div>
-</section>
+</section >
 
-  <section>
-    <div class="container">
+  <section >
+    <div id="planos" style="width: 50px;height: auto;"></div>
+    <div class="container" >
       <h1>Escolha <span class="highlight">o plano</span> ideal para o seu negócio</h1>
       <div class="toggle-switch">
         <div class="toggle-label" data-plan="mensal">Mensal</div>
         <div class="toggle-label" data-plan="anual">Anual</div>
 
       </div>
-      <div class="pricing-cards">
+      <div class="pricing-cards" >
           <div class="pricing-card starter">
               <div class="card-header">
                 <img src="imagens/estrela.png" alt="enterprise" class="images-plan">
                   <h2 class="plan-name">Starter</h2>
+              </div>
+              <div class="promo-banner">
+                <span class="promo-text">7 Dias Grátis</span>
               </div>
                <div class="card-price">
                   <span class="price">R$0</span><span class="period">/Mês</span>
@@ -301,7 +253,7 @@
   </section>
 
   <section>
-    <div class="faq-container">
+    <div id="faq" class="faq-container">
       <h1>FAQ - Astex Technologies</h1>
       
       <div class="faq-item">
