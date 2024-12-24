@@ -50,25 +50,45 @@
             forma eficiente. Clique nos botões abaixo e veja exemplos do nosso impacto!
           </p>
           <div class="button-container">
-          <button class="button-container" data-image="automacao.jpg">Delivery</button>
-          <button class="button-container" data-image="personalizacao.jpg">Imobiliárias</button>
-          <button class="button-container" data-image="seguranca.jpg">Hospedagem e Turismo</button>
-          <button class="button-container" data-image="seguranca.jpg">Comércio e Varejo</button>
-          <button class="button-container" data-image="seguranca.jpg">Saúde e Bem-estar</button>
-          <button class="button-container" data-image="seguranca.jpg">Finanças e Seguros</button>
-        </div>
+            <button class="button" data-image="imagens/imagem whats (3).png">Delivery</button>
+            <button class="button" data-image="imagens/imagem whats (2).png">Imobiliárias</button>
+            <button class="button" data-image="imagens/imagem whats (1).png">Hospedagem e Turismo</button>
+            <button class="button" data-image="imagens/seguranca.jpg">Comércio e Varejo</button>
+            <button class="button" data-image="imagens/saude.jpg">Saúde e Bem-estar</button>
+            <button class="button" data-image="imagens/financas.jpg">Finanças e Seguros</button>
+          </div>
         </div>
       </div>
   
       <!-- Imagem que será alterada -->
       <div class="image-container">
-        <img id="dynamic-image" src="imagens/imagem whats.png" alt="Exemplo de uso da IA" style="width: 400px;height: auto;" />
+        <img id="dynamic-image" src="imagens/imagem whats.png" alt="Exemplo de uso da IA" class="responsive-image" style="width: 400px;height: auto;max-width: 100%;" />
       </div>
-    </div>
+
+      <script>
+        // Seleciona todos os botões
+        const buttons = document.querySelectorAll('.button');
+        
+        // Seleciona a imagem a ser alterada
+        const image = document.getElementById('dynamic-image');
+        
+        // Adiciona evento de clique aos botões
+        buttons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Pega o atributo data-image de cada botão
+                const newImageSrc = button.getAttribute('data-image');
+                
+                // Verifica se o atributo foi encontrado e altera o src da imagem
+                if (newImageSrc) {
+                    image.src = newImageSrc;
+                }
+            });
+        });
+    </script>
 
   </section>
 
-  <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(7, 20, 167, 1)" offset="0%"></stop><stop stop-color="rgba(24, 69, 213, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,80L34.3,73.3C68.6,67,137,53,206,41.7C274.3,30,343,20,411,13.3C480,7,549,3,617,16.7C685.7,30,754,60,823,70C891.4,80,960,70,1029,60C1097.1,50,1166,40,1234,33.3C1302.9,27,1371,23,1440,30C1508.6,37,1577,53,1646,51.7C1714.3,50,1783,30,1851,25C1920,20,1989,30,2057,40C2125.7,50,2194,60,2263,65C2331.4,70,2400,70,2469,68.3C2537.1,67,2606,63,2674,56.7C2742.9,50,2811,40,2880,35C2948.6,30,3017,30,3086,25C3154.3,20,3223,10,3291,6.7C3360,3,3429,7,3497,18.3C3565.7,30,3634,50,3703,60C3771.4,70,3840,70,3909,60C3977.1,50,4046,30,4114,28.3C4182.9,27,4251,43,4320,51.7C4388.6,60,4457,60,4526,53.3C4594.3,47,4663,33,4731,33.3C4800,33,4869,47,4903,53.3L4937.1,60L4937.1,100L4902.9,100C4868.6,100,4800,100,4731,100C4662.9,100,4594,100,4526,100C4457.1,100,4389,100,4320,100C4251.4,100,4183,100,4114,100C4045.7,100,3977,100,3909,100C3840,100,3771,100,3703,100C3634.3,100,3566,100,3497,100C3428.6,100,3360,100,3291,100C3222.9,100,3154,100,3086,100C3017.1,100,2949,100,2880,100C2811.4,100,2743,100,2674,100C2605.7,100,2537,100,2469,100C2400,100,2331,100,2263,100C2194.3,100,2126,100,2057,100C1988.6,100,1920,100,1851,100C1782.9,100,1714,100,1646,100C1577.1,100,1509,100,1440,100C1371.4,100,1303,100,1234,100C1165.7,100,1097,100,1029,100C960,100,891,100,823,100C754.3,100,686,100,617,100C548.6,100,480,100,411,100C342.9,100,274,100,206,100C137.1,100,69,100,34,100L0,100Z"></path></svg>
+  <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 180" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(7, 20, 167, 1)" offset="0%"></stop><stop stop-color="rgba(47, 99, 251, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,126L60,132C120,138,240,150,360,150C480,150,600,138,720,111C840,84,960,42,1080,42C1200,42,1320,84,1440,96C1560,108,1680,90,1800,69C1920,48,2040,24,2160,33C2280,42,2400,84,2520,108C2640,132,2760,138,2880,138C3000,138,3120,132,3240,117C3360,102,3480,78,3600,69C3720,60,3840,66,3960,84C4080,102,4200,132,4320,126C4440,120,4560,78,4680,63C4800,48,4920,60,5040,63C5160,66,5280,60,5400,54C5520,48,5640,42,5760,60C5880,78,6000,120,6120,141C6240,162,6360,162,6480,138C6600,114,6720,66,6840,54C6960,42,7080,66,7200,75C7320,84,7440,78,7560,90C7680,102,7800,132,7920,147C8040,162,8160,162,8280,162C8400,162,8520,162,8580,162L8640,162L8640,180L8580,180C8520,180,8400,180,8280,180C8160,180,8040,180,7920,180C7800,180,7680,180,7560,180C7440,180,7320,180,7200,180C7080,180,6960,180,6840,180C6720,180,6600,180,6480,180C6360,180,6240,180,6120,180C6000,180,5880,180,5760,180C5640,180,5520,180,5400,180C5280,180,5160,180,5040,180C4920,180,4800,180,4680,180C4560,180,4440,180,4320,180C4200,180,4080,180,3960,180C3840,180,3720,180,3600,180C3480,180,3360,180,3240,180C3120,180,3000,180,2880,180C2760,180,2640,180,2520,180C2400,180,2280,180,2160,180C2040,180,1920,180,1800,180C1680,180,1560,180,1440,180C1320,180,1200,180,1080,180C960,180,840,180,720,180C600,180,480,180,360,180C240,180,120,180,60,180L0,180Z"></path></svg>
 
   
 
@@ -299,8 +319,10 @@
       </div>
   </div>
   </section>
+
   
   <script src="App.js"></script>
+  
 </body>
 <footer class="footer">
   <div class="footer-container">

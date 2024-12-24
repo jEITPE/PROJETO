@@ -229,3 +229,16 @@ navToggle.addEventListener('click', () => {
 });
 
 
+
+const buttons = document.querySelectorAll('.button');
+const image = document.getElementById('dynamic-image');
+
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+    const newImageSrc = button.getAttribute('data-image');
+    if (newImageSrc) {
+      image.src = newImageSrc;
+    }
+  });
+});
+
