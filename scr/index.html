@@ -320,6 +320,31 @@
   </div>
   </section>
 
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Selecione todas as perguntas
+        const questions = document.querySelectorAll(".faq-item .question");
+
+        // Adicione um ouvinte de evento de clique a cada pergunta
+        questions.forEach(function(question) {
+            // Encontre a resposta correspondente pela classe 'answer'
+            const answer = question.nextElementSibling;
+
+            // Inicialmente, as respostas devem estar ocultas
+            answer.classList.remove("show"); // Certifique-se de que a resposta começa oculta
+
+            question.addEventListener("click", function() {
+                // Alterna a exibição da resposta
+                if (answer.classList.contains("show")) {
+                    answer.classList.remove("show"); // Remove a classe 'show' para esconder a resposta
+                } else {
+                    answer.classList.add("show"); // Adiciona a classe 'show' para exibir a resposta com animação
+                }
+            });
+        });
+    });
+</script>
+
   
   <script src="App.js"></script>
   
