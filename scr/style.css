@@ -15,6 +15,7 @@ body {
   font-family: 'Sora', sans-serif;
   background-color: #fffdff;
   overflow-x: hidden; /* Evita scroll lateral */
+  
 }
 
 .navbar {
@@ -2450,4 +2451,10 @@ content: "•";
   .logo img {
     max-height: 40px;
   }
+}
+
+footer {
+  position: relative; /* ou fixed, se for necessário */
+  bottom: 0; /* Caso use position: fixed, isso coloca o footer no rodapé */
+  width: 100%;
 }
