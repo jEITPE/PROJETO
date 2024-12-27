@@ -2458,3 +2458,70 @@ footer {
   bottom: 0; /* Caso use position: fixed, isso coloca o footer no rodapé */
   width: 100%;
 }
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .layout-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .text-section,
+  .image-container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .responsive-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .button {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    flex: 1 1 100%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .wave-container {
+    height: 120px; /* Reduza a altura do container */
+  }
+
+  #wave {
+    height: 120px; /* Altura proporcional à tela */
+    transform: translateY(20px); /* Mova a onda levemente para baixo */
+  }
+}
+
+@media (max-width: 480px) {
+  .wave-container {
+    height: 100px; /* Altura ainda menor */
+  }
+
+  #wave {
+    height: 100px; /* Ajuste adicional */
+    transform: translateY(30px); /* Posicione mais precisamente */
+  }
+}
+
