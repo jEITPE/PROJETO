@@ -104,40 +104,6 @@ body {
   }
 }
 
-.logo, a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #152446;
-  gap: 0px;
-  height: 100% !important; /* Adapta ao tamanho da navbar */
-  margin-left: 15px;
-  transition: opacity 0.3s ease; /* Suaviza a transição */
-}
-
-
-.logo img {
-  max-height: 100%; /* Garante que a altura da imagem não ultrapasse a navbar */
-  max-width: 205px; /* Mantém largura máxima específica */
-  height: auto; /* Proporções corretas */
-  width: auto; /* Mantém proporção */
-}
-
-.logo a {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.logo p {
-  font-size: 29px;
-  font-weight: bolder;
-  color: #152446;
-}
-
-.logo img:hover, .logo:hover {
-  opacity: 0.7; /* Define a opacidade no hover (ajustável entre 0 e 1) */
-  cursor: pointer;
-}
 
 /* Layout Container */
 .layout-container {
@@ -2296,5 +2262,192 @@ content: "•";
   }
   100% {
     transform: translateX(0.125em);
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espaço entre o logo e o texto */
+  height: 100% !important; /* Adapta ao tamanho da navbar */
+  transition: opacity 0.3s ease; /* Suaviza a transição */
+}
+
+.logo img {
+  max-height: 50px; /* Tamanho do logo */
+  height: auto; /* Mantém proporção */
+  width: auto; /* Mantém proporção */
+}
+
+.logo p {
+  font-size: 29px;
+  font-weight: bolder;
+  color: #152446;
+  margin: 0;
+}
+
+.logo img:hover, .logo p:hover {
+  opacity: 0.7; /* Opacidade no hover */
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .logo p {
+    display: none; /* Oculta o texto em telas menores */
+  }
+
+  .logo {
+    justify-content: center; /* Garante que o logo fique centralizado */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    max-height: 40px; /* Ajusta o tamanho do logo em telas muito pequenas */
+  }
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Ajustes gerais da navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Garante o espaçamento entre os elementos */
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+  position: relative; /* Necessário para o posicionamento do botão hamburguer */
+}
+
+/* Fixa a navbar em telas de 768px ou menores */
+@media (max-width: 768px) {
+  .navbar {
+    position: fixed; /* Fixa a navbar no topo */
+    top: 0; /* Fixa no topo da página */
+    width: 100%; /* Ocupa toda a largura */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra para dar destaque */
+  }
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logo imagem */
+.logo img {
+  max-height: 50px;
+  height: auto;
+  width: auto;
+}
+
+/* Menu hambúrguer */
+.menu-toggle {
+  display: none; /* Escondido por padrão */
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 1001;
+}
+
+/* Links de navegação */
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  margin-left: auto; /* Centraliza os links entre logo e CTA */
+  margin-right: auto; /* Centraliza os links entre logo e CTA */
+}
+
+/* Estilo dos links */
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #152446;
+  font-size: 18px;
+}
+
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; /* Exibe o botão hambúrguer em telas pequenas */
+  }
+
+  .nav-links {
+    display: flex; /* Quando ativo, exibe os links */
+    flex-direction: column; /* Empilha os itens verticalmente */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    z-index: 1000;
+    text-align: center;
+    transform: translateX(100%); /* Menu começa fora da tela */
+    transition: transform 0.3s ease-in-out; /* Transição suave */
+  }
+
+  .nav-links.active {
+    transform: translateX(0); /* Menu desliza para dentro da tela */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  /* Ajuste no tamanho da fonte para links dentro do menu hambúrguer */
+  .nav-links a {
+    font-size: 14px; /* Reduzindo o tamanho da fonte */
+  }
+}
+
+
+@media (max-width: 480px) {
+  .logo img {
+    max-height: 40px;
+  }
+}
+
+/* Ajustes para responsividade */
+@media (max-width: 768px) {
+  /* Esconde o botão CTA em telas pequenas */
+  .cta-button {
+    display: none;
+  }
+
+  /* Exibe o botão hambúrguer em telas pequenas */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Outras regras de responsividade... */
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    max-height: 40px;
   }
 }

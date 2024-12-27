@@ -13,14 +13,28 @@
       <a class="home" id="img-link" href="#"><img src="imagens/logoazul.png" alt="Logo"></a>
       <a class="home" id="p-link" href="#"><p>ASTEX</p></a>
     </div>
-    <ul class="nav-links">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir Menu">☰</button>
+    <ul class="nav-links" id="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#planos">Planos</a></li>
       <li><a href="#faq">Como usar?</a></li>
     </ul>
-    <button class="cta-button">Crie seu agente agora</button>
+    <div><li><button class="cta-button">Crie seu agente agora</button></li></div>
   </nav>
-
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.getElementById('menu-toggle');
+      const navLinks = document.getElementById('nav-links');
+  
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active'); // Alterna a classe active
+        });
+      }
+    });
+  </script>
+  
+  
   <div id="home" class="main-container">
     <div class="text-container">
       <h1 class="main-heading">
