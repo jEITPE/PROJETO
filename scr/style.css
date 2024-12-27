@@ -950,6 +950,10 @@ section .relationship-title {
 .page-section {
   padding: 80px 0;
   background-color: #fffeff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5em; /* Espaçamento entre os cards */
 }
 
 .container {
@@ -2017,7 +2021,7 @@ content: "•";
   border-radius: 16px;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
   overflow: hidden;
-  max-width: 1600px; /* Largura máxima */
+  max-width: 1800px; /* Largura máxima */
   width: 90%; /* Responsividade */
   margin: 80px auto; /* Centralização */
   padding: 40px; /* Espaçamento interno */
@@ -2137,3 +2141,160 @@ content: "•";
   }
 }
 
+
+.software {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.img-fluid {
+  width: 100%; /* Torna a imagem responsiva */
+  max-width: 1900px; /* Define um tamanho máximo para a imagem */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-top: 1rem; /* Adiciona espaço superior */
+  transition: transform 0.3s ease; /* Transição suave para o zoom */
+}
+
+.img-fluid:hover {
+  transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+
+.data-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 340px; /* Defina um tamanho fixo para os cards */
+  min-height: 450px; /* Garantir que todos os cards tenham a mesma altura */
+  max-width: 300px; /* Defina o máximo de largura */
+  background: white;
+  padding: 20px;
+  box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+  border-radius: .5em;
+  text-decoration: none;
+  margin: 1em;
+  height: auto;
+}
+
+/* Estilos para dispositivos médios */
+@media (max-width: 1024px) {
+  .data-card {
+    flex: 1 1 calc(50% - 2em); /* Tamanho de 1/2 do container menos espaçamento */
+  }
+}
+
+/* Estilos para dispositivos pequenos */
+@media (max-width: 768px) {
+  .data-card {
+    flex: 1 1 calc(100% - 2em); /* Ocupa 100% do container menos espaçamento */
+    padding: 2em 1.5em; /* Reduzindo o padding em telas menores */
+  }
+
+  h3 {
+    font-size: 2.5em; /* Reduzindo o tamanho da fonte */
+  }
+
+  h4 {
+    font-size: 1em; /* Ajuste para manter a legibilidade */
+  }
+}
+
+.data-card h3 {
+  color: #2E3C40;
+  font-size: 3.5em;
+  font-weight: 600;
+  line-height: 1;
+  padding-bottom: 0.5em;
+  margin: 0 0 0.142857143em;
+  border-bottom: 2px solid #3b85da;
+  transition: color 0.45s ease, border 0.45s ease;
+}
+
+.data-card h4 {
+  color: #627084;
+  text-transform: uppercase;
+  font-size: 1.125em;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  margin: 0 0 1.777777778em;
+  transition: color 0.45s ease;
+}
+
+.data-card p {
+  opacity: 0;
+  color: #FFFFFF;
+  font-weight: 600;
+  line-height: 1.8;
+  margin: 0 0 1.25em;
+  transform: translateY(-1em);
+  transition: opacity 0.45s ease, transform 0.5s ease;
+}
+
+.data-card .link-text {
+  display: block;
+  color: #3b85da;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: auto 0 0;
+  transition: color 0.45s ease;
+}
+
+.data-card .link-text svg {
+  margin-left: 0.5em;
+  transition: transform 0.6s ease;
+}
+
+.data-card .link-text svg path {
+  transition: fill 0.45s ease;
+}
+
+.data-card:hover {
+  background: #75b1f7;
+  transform: scale(1.02);
+}
+
+.data-card:hover h3 {
+  color: #FFFFFF;
+  border-bottom-color: #3b85da;
+}
+
+.data-card:hover h4 {
+  color: #FFFFFF;
+}
+
+.data-card:hover p {
+  opacity: 1;
+  transform: none;
+}
+
+.data-card:hover .link-text {
+  color: #FFFFFF;
+}
+
+.data-card:hover .link-text svg {
+  animation: point 1.25s infinite alternate;
+}
+
+.data-card:hover .link-text svg path {
+  fill: #FFFFFF;
+}
+
+@keyframes point {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(0.125em);
+  }
+}
