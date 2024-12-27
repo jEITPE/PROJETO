@@ -306,105 +306,91 @@
       <h1>FAQ - Astex Technologies</h1>
       
       <div class="faq-item">
-          <div class="question">Posso substituir totalmente minha equipe de vendas e atendimento por Agentes IA?</div>
-          <div class="answer">
-              Embora a inteligência artificial possa automatizar várias funções, é importante lembrar que o fator humano em vendas e atendimento continua sendo essencial. Agentes IA podem ser usados para otimizar tarefas repetitivas e fornecer suporte 24/7, mas uma abordagem híbrida, combinando IA e interação humana, geralmente oferece os melhores resultados.
-          </div>
+        <div class="question">Posso substituir totalmente minha equipe de vendas e atendimento por Agentes IA?</div>
+        <div class="answer">
+          Embora a inteligência artificial possa automatizar várias funções, é importante lembrar que o fator humano em vendas e atendimento continua sendo essencial. Agentes IA podem ser usados para otimizar tarefas repetitivas e fornecer suporte 24/7, mas uma abordagem híbrida, combinando IA e interação humana, geralmente oferece os melhores resultados.
+        </div>
       </div>
       
       <div class="faq-item">
-          <div class="question">É fácil treinar um Agente IA?</div>
-          <div class="answer">
-              O treinamento de Agentes IA pode ser relativamente simples, dependendo da complexidade das interações que você deseja que o agente realize. A Astex Technologies oferece soluções intuitivas para treinamento de IA, com interfaces gráficas e suporte técnico para garantir que a implementação seja eficiente e eficaz.
-          </div>
+        <div class="question">É fácil treinar um Agente IA?</div>
+        <div class="answer">
+          O treinamento de Agentes IA pode ser relativamente simples, dependendo da complexidade das interações que você deseja que o agente realize. A Astex Technologies oferece soluções intuitivas para treinamento de IA, com interfaces gráficas e suporte técnico para garantir que a implementação seja eficiente e eficaz.
+        </div>
       </div>
       
       <div class="faq-item">
-          <div class="question">Vocês podem me ajudar a treinar os Agentes IA e configurar outros recursos do Agente?</div>
-          <div class="answer">
-              Sim! A Astex Technologies oferece suporte completo para treinamento de Agentes IA. Nossa equipe de especialistas pode personalizar as configurações de IA de acordo com as necessidades específicas do seu negócio, garantindo uma integração suave e eficiente.
-          </div>
+        <div class="question">Vocês podem me ajudar a treinar os Agentes IA e configurar outros recursos do Agente?</div>
+        <div class="answer">
+          Sim! A Astex Technologies oferece suporte completo para treinamento de Agentes IA. Nossa equipe de especialistas pode personalizar as configurações de IA de acordo com as necessidades específicas do seu negócio, garantindo uma integração suave e eficiente.
+        </div>
       </div>
       
       <div class="faq-item">
-          <div class="question">Preciso de conhecimentos técnicos ou de programação?</div>
-          <div class="answer">
-              Não é necessário ter conhecimentos avançados em programação para utilizar as soluções da Astex Technologies. Oferecemos ferramentas amigáveis e suporte dedicado para garantir que você consiga implementar e gerenciar suas soluções de IA sem complicações técnicas.
-          </div>
+        <div class="question">Preciso de conhecimentos técnicos ou de programação?</div>
+        <div class="answer">
+          Não é necessário ter conhecimentos avançados em programação para utilizar as soluções da Astex Technologies. Oferecemos ferramentas amigáveis e suporte dedicado para garantir que você consiga implementar e gerenciar suas soluções de IA sem complicações técnicas.
+        </div>
       </div>
       
       <div class="faq-item">
-          <div class="question">Nossas vendas são complexas, o Agente IA conseguirá aprender?</div>
-          <div class="answer">
-              Sim, o Agente IA da Astex Technologies pode ser treinado para lidar com processos de vendas complexos. A IA pode aprender interações específicas do seu negócio e adaptar-se ao comportamento do cliente, tornando-se cada vez mais eficiente com o tempo. Temos soluções de IA personalizáveis para atender a diferentes tipos de vendas.
-          </div>
+        <div class="question">Nossas vendas são complexas, o Agente IA conseguirá aprender?</div>
+        <div class="answer">
+          Sim, o Agente IA da Astex Technologies pode ser treinado para lidar com processos de vendas complexos. A IA pode aprender interações específicas do seu negócio e adaptar-se ao comportamento do cliente, tornando-se cada vez mais eficiente com o tempo. Temos soluções de IA personalizáveis para atender a diferentes tipos de vendas.
+        </div>
       </div>
       
       <div class="faq-item">
-          <div class="question">Posso atender clientes em inglês e outras línguas com IA?</div>
-          <div class="answer">
-              Absolutamente! Os Agentes IA da Astex Technologies são compatíveis com múltiplos idiomas, incluindo inglês e outros idiomas internacionais. Isso permite que você ofereça atendimento globalizado, com uma comunicação eficaz em várias línguas.
-          </div>
+        <div class="question">Posso atender clientes em inglês e outras línguas com IA?</div>
+        <div class="answer">
+          Absolutamente! Os Agentes IA da Astex Technologies são compatíveis com múltiplos idiomas, incluindo inglês e outros idiomas internacionais. Isso permite que você ofereça atendimento globalizado, com uma comunicação eficaz em várias línguas.
+        </div>
       </div>
-  </div>
+    </div>
   </section>
 
+  <!-- Script para interação das perguntas e respostas -->
   <script>
     document.addEventListener("DOMContentLoaded", function() {
-        // Selecione todas as perguntas
         const questions = document.querySelectorAll(".faq-item .question");
 
-        // Adicione um ouvinte de evento de clique a cada pergunta
         questions.forEach(function(question) {
-            // Encontre a resposta correspondente pela classe 'answer'
             const answer = question.nextElementSibling;
-
-            // Inicialmente, as respostas devem estar ocultas
-            answer.classList.remove("show"); // Certifique-se de que a resposta começa oculta
+            answer.classList.remove("show");
 
             question.addEventListener("click", function() {
-                // Alterna a exibição da resposta
-                if (answer.classList.contains("show")) {
-                    answer.classList.remove("show"); // Remove a classe 'show' para esconder a resposta
-                } else {
-                    answer.classList.add("show"); // Adiciona a classe 'show' para exibir a resposta com animação
-                }
+                answer.classList.toggle("show");
             });
         });
     });
-</script>
+  </script>
 
-  
+  <!-- Script adicional -->
   <script src="App.js"></script>
-  
-</body>
 
+  <!-- Rodapé -->
   <footer class="footer">
-  <div class="footer-container">
-    <!-- Logo e Nome igual ao Nav -->
-    <div class="footer-logo">
-      <img src="imagens/logoazul.png" alt="Astex Logo" />
-      <span>ASTEX</span>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="imagens/logoazul.png" alt="Astex Logo" />
+        <span>ASTEX</span>
+      </div>
+      <div class="footer-links">
+        <a href="#">Termos de Serviço</a>
+        <a href="#">Política de Uso</a>
+        <a href="#">Política de Privacidade</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com" target="_blank">
+          <img src="imagens/insta.png" alt="Instagram" />
+        </a>
+        <a href="https://linkedin.com" target="_blank">
+          <img src="imagens/linkedin.png" alt="LinkedIn" />
+        </a>
+      </div>
     </div>
+    <p>© 2024 Astex Technologies - Todos os direitos reservados.</p>
+  </footer>
 
-    <!-- Links e Direitos -->
-    <div class="footer-links">
-      <a href="#">Termos de Serviço</a>
-      <a href="#">Política de Uso</a>
-      <a href="#">Política de Privacidade</a>
-    </div>
-
-    <!-- Redes Sociais Inline -->
-    <div class="footer-social">
-      <a href="https://instagram.com" target="_blank">
-        <img src="imagens/insta.png" alt="Instagram" />
-      </a>
-      <a href="https://linkedin.com" target="_blank">
-        <img src="imagens/linkedin.png'" alt="LinkedIn" />
-      </a>
-    </div>
-  </div>
-  <p>© 2024 Astex Technologies - Todos os direitos reservados.</p>
-</footer>
 
 </html>
